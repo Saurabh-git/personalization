@@ -1,0 +1,50 @@
+@charset "utf-8";
+@import 'https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=cyrillic,cyrillic-ext,latin-ext';
+
+/*styles*
+/* Move down content because we have a fixed navbar that is 50px tall */
+body {
+  padding-top: 50px;
+}
+a:hover, a:focus{text-decoration:none;}
+html, body {height:100%; width:100%; margin: 0; font-family: 'PT Sans', sans-serif;}
+.no-padding{padding:0;}
+/*
+ * Top navigation
+ * Hide default border to remove 1px line.
+ */
+.navbar-fixed-top {
+  border: 0;
+  background: #002535;
+}
+.navbar-default .navbar-brand{
+	color: #fff;
+}
+.navbar-default .navbar-nav > li > a{
+   color:#fff;
+}
+.navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover{
+   color:#28aae2;	
+}
+table.tbl-info > tbody > tr > th, table.tbl-info > tbody > tr > td{vertical-align:middle;}
+
+
+
+@media (min-width: 768px) {
+  .main {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+}
+.main .page-header {
+  margin-top: 0;
+}
+
+.box{background:#fff; margin-bottom:20px;}
+.box-header{display:block;}
+.box-title{font-size:16px; color:#333; display:inline-block; margin:0; padding:0 0 10px;}
+.list-group-unbordered > .list-group-item {border-left:none; border-right:none; border-radius: 0; padding-left: 0;   padding-right: 0;}
+
+/*footer*/
+.footer{background:#2a2730; padding:20px 0; margin-top:20px;}
+.footer p{color:#fff;}
