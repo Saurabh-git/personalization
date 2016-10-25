@@ -9,42 +9,35 @@ body {
 a:hover, a:focus{text-decoration:none;}
 html, body {height:100%; width:100%; margin: 0; font-family: 'PT Sans', sans-serif;}
 .no-padding{padding:0;}
-/*
- * Top navigation
- * Hide default border to remove 1px line.
- */
-.navbar-fixed-top {
-  border: 0;
-  background: #002535;
-}
-.navbar-default .navbar-brand{
-	color: #fff;
-}
-.navbar-default .navbar-nav > li > a{
-   color:#fff;
-}
-.navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover{
-   color:#28aae2;	
-}
+.navbar-fixed-top {border: 0; background: #2a2730;}
+.navbar-default .navbar-brand{color: #fff;}
+.navbar-default .navbar-nav > li > a{color:#fff;}
+.navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover, 
+.navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:hover{color:#28aae2;}
 table.tbl-info > tbody > tr > th, table.tbl-info > tbody > tr > td{vertical-align:middle;}
 
-
-
 @media (min-width: 768px) {
-  .main {
-    padding-right: 40px;
-    padding-left: 40px;
-  }
-}
-.main .page-header {
-  margin-top: 0;
+  .main {padding-right: 40px; padding-left: 40px;}
 }
 
+.main .page-header {margin-top: 0;}
 .box{background:#fff; margin-bottom:20px;}
 .box-header{display:block;}
-.box-title{font-size:16px; color:#333; display:inline-block; margin:0; padding:0 0 10px;}
-.list-group-unbordered > .list-group-item {border-left:none; border-right:none; border-radius: 0; padding-left: 0;   padding-right: 0;}
+.with-border{border-bottom:1px solid #ddd;}
+.box-title{font-size:18px; color:#333; display:inline-block; margin:0; padding:0 0 10px;}
+.rounded{background:#fff; border-radius:4px 4px 0 0; border:1px solid #ddd; padding:10px 15px; margin-bottom:-1px; border-bottom-color:transparent;}
+.box-body{width:100%; display:block; margin-bottom:40px;}
+.box-body .col-group{border-top:1px solid #ddd; border-bottom:1px solid #ddd; display:block; margin-bottom:-1px; float:left; width:100%; padding:10px 0;}
+.box-body .col-group:first-child{border-top:none;}
+.box-body .panel{border-radius:4px 4px 0 0;}
+.box-body .panel .panel-heading{font-weight:bold;}
+
+.m-btm20{margin-bottom:20px;}
 
 /*footer*/
 .footer{background:#2a2730; padding:20px 0; margin-top:20px;}
-.footer p{color:#fff;}
+.footer p{color:#888; margin:0;}
+
+@media (max-width: 767px){
+	.box-body .panel-body p{word-wrap:break-word;}
+}
